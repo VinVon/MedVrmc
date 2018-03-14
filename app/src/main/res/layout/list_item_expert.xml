@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal">
+    <TextView
+        android:gravity="center"
+        android:layout_width="80dp"
+        android:text="张三"
+        android:layout_height="match_parent" />
+    <TextView
+        android:gravity="center"
+        android:layout_width="180dp"
+        android:text="125623313"
+        android:layout_height="match_parent" />
+    <TextView
+        android:gravity="center"
+        android:layout_width="40dp"
+        android:text="男"
+        android:layout_height="match_parent" />
+    <TextView
+        android:gravity="center"
+        android:layout_width="120dp"
+        android:text="15771013663"
+        android:layout_height="match_parent" />
+    <TextView
+        android:gravity="center"
+        android:layout_width="180dp"
+        android:text="的萨芬"
+        android:layout_height="match_parent" />
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:text="操作"
+        android:layout_height="match_parent" />
+</LinearLayout>

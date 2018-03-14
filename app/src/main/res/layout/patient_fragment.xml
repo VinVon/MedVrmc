@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="患者管理" />
+
+        <TextView
+            android:layout_width="43dp"
+            android:layout_height="21dp"
+            android:text="病案号" />
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/patient_edit_bg" />
+
+        <TextView
+            android:layout_width="29dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="15dp"
+            android:text="姓名" />
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/patient_edit_bg" />
+
+        <TextView
+            android:layout_width="29dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="15dp"
+            android:text="查询" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@color/background" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="添加患者" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background"></LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:gravity="center"
+            android:layout_width="80dp"
+            android:text="姓名"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center"
+            android:layout_width="180dp"
+            android:text="病案号"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center"
+            android:layout_width="40dp"
+            android:text="性别"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center"
+            android:layout_width="120dp"
+            android:text="手机号"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center"
+            android:layout_width="180dp"
+            android:text="病症"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:text="操作"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/patient_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+</LinearLayout>
