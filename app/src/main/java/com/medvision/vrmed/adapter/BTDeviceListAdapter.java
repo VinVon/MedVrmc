@@ -1,11 +1,10 @@
-package com.med.vrmc.tablet.adapter;
+package com.medvision.vrmed.adapter;
 
 import java.util.ArrayList;
 
 
 import android.bluetooth.BluetoothDevice;
 import android.content.Context;
-import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,7 +12,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.med.vrmc.tablet.R;
+import com.medvision.vrmed.R;
 
 
 public class BTDeviceListAdapter extends BaseAdapter {
