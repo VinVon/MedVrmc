@@ -3,34 +3,45 @@
     android:layout_width="match_parent"
     android:layout_height="40dp"
     android:orientation="horizontal">
-    <TextView
-        android:gravity="center"
-        android:layout_width="80dp"
-        android:text="张三"
-        android:layout_height="match_parent" />
-    <TextView
-        android:gravity="center"
-        android:layout_width="180dp"
-        android:text="125623313"
-        android:layout_height="match_parent" />
-    <TextView
-        android:gravity="center"
-        android:layout_width="40dp"
-        android:text="男"
-        android:layout_height="match_parent" />
-    <TextView
-        android:gravity="center"
-        android:layout_width="120dp"
-        android:text="15771013663"
-        android:layout_height="match_parent" />
-    <TextView
-        android:gravity="center"
-        android:layout_width="180dp"
-        android:text="的萨芬"
-        android:layout_height="match_parent" />
-    <TextView
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:text="操作"
-        android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="160dp"
+                    android:text="离散的"
+                    android:textColor="#000000"
+                    android:textSize="11sp" />
+                <TextView
+                    android:gravity="center"
+
+                    android:layout_width="200dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:text="浙江省人民中医院"
+                    android:textColor="#666666"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="16dp"
+                    android:text="20188-03-09"
+                    android:textColor="#666666"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_marginLeft="40dp"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="16dp"
+                    android:text="治疗师"
+                    android:textColor="#666666"
+                    android:textSize="11sp" />
+
+        </LinearLayout>
 </LinearLayout>

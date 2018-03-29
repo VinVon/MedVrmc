@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="26dp"
+    android:layout_marginLeft="34dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/picture_default"
+        />
+    <TextView
+        android:layout_width="152dp"
+        android:layout_height="20dp"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:text="正念感受 (原野)"
+        android:gravity="center_vertical"/>
+    <TextView
+        android:layout_width="152dp"
+        android:layout_height="20dp"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:ellipsize="end"
+        android:text="犯得上发射点根深蒂固的归属感的撒发生发发发撒发射点发啊"
+        android:lines="1"
+        android:gravity="center_vertical"/>
+</LinearLayout>

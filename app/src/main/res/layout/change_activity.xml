@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/change_back"
+            android:layout_width="28dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="58dp"
+            android:text="取消"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="28dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/main_title"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/change_comple"
+            android:layout_width="28dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="58dp"
+            android:text="完成"
+            android:textColor="#D47878"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/login_btn_bg">
+        <LinearLayout
+            android:layout_above="@+id/change_l2"
+            android:layout_marginBottom="20dp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/changge_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更改为"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/changge_item_value"
+                android:layout_width="200dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="12dp"
+                android:paddingLeft="10dp"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/change_l2"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更改为"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/change_item2_value"
+                android:layout_width="200dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/add_edit_bg"
+                android:hint="请输入"
+                android:paddingLeft="10dp"
+                android:textColor="#999999"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/clude_ll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="28dp"
+    android:layout_toRightOf="@id/img_imformation"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/huadong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:scrollbars="none">
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:checkedButton="@+id/radioALL"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioALL"
+                style="@style/training_radio"
+                android:text="VR睡眠" />
+
+            <RadioButton
+                android:id="@+id/radioA"
+                style="@style/training_radio"
+                android:text="VR松弛" />
+
+            <RadioButton
+                android:id="@+id/radioB"
+                style="@style/training_radio"
+                android:text="VR音乐" />
+
+            <RadioButton
+                android:id="@+id/radioC"
+                style="@style/training_radio"
+                android:text="VR正念" />
+
+            <RadioButton
+                android:id="@+id/radioD"
+                style="@style/training_radio"
+                android:text="VR正念工娱" />
+
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/huadong"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/img_imformation"
+            android:background="#3F5C7A"
+            android:orientation="horizontal"></LinearLayout>
+
+        <ImageView
+            android:id="@+id/radio_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/choose" />
+    </FrameLayout>
+</LinearLayout>

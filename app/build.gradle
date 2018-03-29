@@ -22,13 +22,13 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
     defaultConfig {
-        applicationId "com.med.vrmc.tablet"
+        applicationId "com.medvision.vrmed"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        resValue "string", "tray__authority", "com.med.vrmc.tablet.tray"
+        resValue "string", "tray__authority", "com.medvision.vrmed.tray"
     }
     compileOptions{
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -50,6 +50,7 @@ android {
             jniLibs.srcDirs = ['libs']
         }
     }
+    buildToolsVersion '26.0.2'
 }
 
 final def log = project.logger
@@ -111,4 +112,9 @@ dependencies {
     compile files('libs/libStreamSDK_v1.3.2.jar')
     compile 'com.github.PhilJay:MPAndroidChart:v3.0.3'
     compile files('libs/aspectjrt.jar')
+    //
+    compile 'com.contrarywind:Android-PickerView:4.0.1'
+    //
+    compile 'com.zhy:okhttputils:2.6.2'
+//    compile files('libs/xUtils-2.6.14.jar')
 }

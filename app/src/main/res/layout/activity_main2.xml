@@ -1,7 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/total"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     android:orientation="vertical">
 
+    <RelativeLayout
+
+        android:id="@+id/main_title1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/main_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/search_press" />
+
+        <ImageView
+            android:id="@+id/main_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/main_search"
+            android:background="@drawable/main_add" />
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="28dp"
+            android:layout_centerInParent="true"
+            android:text="@string/main_title"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/main_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/main_menu"
+            android:text="张三"
+            android:textColor="#666666"
+            android:drawableRight="@drawable/treatman_nor"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:textSize="16sp" />
+        <ImageView
+            android:id="@+id/main_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/more_press" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/main_title2"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/main_search_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/main_search"
+            android:paddingLeft="20dp"
+            android:drawablePadding="20dp"
+            android:imeOptions="actionSearch"
+            android:lines="1"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/edit_search"
+            android:textColor="#999999"
+            android:textSize="14sp"
+            android:hint="病案号/姓名" />
+
+        <TextView
+            android:id="@+id/main_search_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+
+            android:layout_toRightOf="@+id/main_search_two"
+            android:text="取消"
+            android:textColor="#999999"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/patient_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_btn_bg"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
 </LinearLayout>

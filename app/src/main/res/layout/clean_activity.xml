@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/clean_back"
+            android:layout_width="28dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="58dp"
+            android:text="取消"
+            android:textColor="#999999"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="28dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/main_title"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/clean_comple"
+            android:layout_width="28dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="58dp"
+            android:text="清理"
+            android:textColor="#D47878"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_btn_bg"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_above="@+id/img_logout"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:text="请确定是否清理缓存？"
+            android:layout_marginBottom="55dp"
+            android:textSize="18sp"
+            android:textColor="#999999"/>
+        <ImageView
+            android:id="@+id/img_logout"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reminder"
+            />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,6 +1,22 @@
 <resources>
     <string name="app_name">MedVrmc</string>
     <string name="main_title_name">心景健康训练系统</string>
-    <string name="login_edit_name_admin">请输入账号</string>
+    <string name="login_edit_name_admin">请输入用户名</string>
     <string name="login_edit_name_pass">请输入密码</string>
+
+    <!-- 登陆-->
+    <string name="login_str">虚拟现实心理健康训练系统</string>
+    <!-- 首页-->
+    <string name="main_title">虚拟现实心理健康训练系统</string>
+    <string name="training_title">训练中心</string>
+    <string name="record_title">训练记录</string>
+    <!-- menu-->
+    <string name="menu_logout">注销</string>
+    <string name="menu_clean">清理缓存</string>
+    <string name="menu_system">关于系统</string>
+    <string name="menu_update">检查更新</string>
+    <!-- admin -->
+    <string name="admin_name">姓名修改</string>
+    <string name="admin_pass">密码修改</string>
+    <string name="admin_phone">手机号修改</string>
 </resources>
